@@ -1,0 +1,25 @@
+.\bin\neo4j-admin.bat import ^
+--database=neo4j ^
+--force=true ^
+--skip-bad-relationships ^
+--id-type=STRING ^
+--nodes Z:/S3/mg-bol/neo4j/import/xpm/node_consignee-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/node_consignee-data.csv.gz ^
+--nodes Z:/S3/mg-bol/neo4j/import/xpm/node_shipper-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/node_shipper-data.csv.gz ^
+--nodes Z:/S3/mg-bol/neo4j/import/xpm/node_carrier-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/node_carrier-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_shipper-consignee-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_shipper-consignee-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_shipper-carrier-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_shipper-carrier-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_carrier-consignee-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_carrier-consignee-data.csv.gz ^
+--nodes Z:/S3/mg-bol/neo4j/import/xpm/node_portoflading-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/node_portoflading-data.csv.gz ^
+--nodes Z:/S3/mg-bol/neo4j/import/xpm/node_portofunlading-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/node_portofunlading-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_shipper-portoflading-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_shipper-portoflading-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_shipper-portofunlading-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_shipper-portofunlading-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_portofunlading-consignee-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_portofunlading-consignee-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_portoflading-consignee-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_portoflading-consignee-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_carrier-portoflading-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_carrier-portoflading-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_carrier-portofunlading-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_carrier-portofunlading-data.csv.gz ^
+--nodes Z:/S3/mg-bol/neo4j/import/xpm/node_notifyparty-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/node_notifyparty-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_notifyparty-consignee-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_notifyparty-consignee-data.csv.gz ^
+--relationships Z:/S3/mg-bol/neo4j/import/xpm/rel_notifyparty-portofunlading-header.csv,Z:/S3/mg-bol/neo4j/import/xpm/rel_notifyparty-portofunlading-data.csv.gz
+
+
+.\bin\neo4j-admin memrec

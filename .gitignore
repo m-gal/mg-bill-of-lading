@@ -1,0 +1,11 @@
+**/__pycache__/
+**/.pytest_cache/
+*.ssmssln
+*.ssmssqlproj
+
+**/_no_longer_useful
+**/analyze/
+
+temp/
+trash/
+zips/

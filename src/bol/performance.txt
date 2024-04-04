@@ -1,0 +1,54 @@
+PERFORMANCES FOR XPORTMINE DATA
+================================================================================
+================================================================================
+Handle the Estimated Arrival Date ..............................
+There are number of rows when the (Estimate - Actual) gap > 360 days:
+	# 4,089 ...
+	% 0.015254342945757995 ...
+Handled the Estimated Arrival Date for: 3min 23sec
+
+================================================================================
+Handle the Carriers ............................................
+Handled the Carriers for: 1min 5sec
+
+================================================================================
+Handle the Vessels .............................................
+Total records: # 26,805,481 records
+	Vessels Names N/A records: # 359
+	Vessels Names records: # 26,805,122
+	Vessels Names uniques: # 18,334
+
+	Vessels IMO N/A records: # 258,998
+	Vessels IMO records: # 26,546,483
+	Vessels IMO uniques: # 7,293
+Make merging for IMOs from the BoL stuff .......................
+Vessels Names records (imo-like): # 26,546,483
+	# 25,724,652 got IMOs - % 96.9
+	# 821,831 w/o IMOs
+Vessels Names unique (imo-like): # 7,293
+	# 6,508 got IMOs - % 89.24
+	# 785 w/o IMOs
+Number of cores in system: 48
+Make FIRST fuzzy matching for names from the BoL data ..........
+	with scorer: token_sort_ratio
+Multiprocessing fuzzy matching for: 3min 6sec
+    First approach with scorer: token_sort_ratio
+    Have tried match for Vessels Names unique: # 11,662
+    	# 7,425 got IMOs - % 63.67
+    	# 4,237 w/o IMOs
+Make SECOND fuzzy matching for names from the BoL data .........
+	with scorer: token_set_ratio
+Multiprocessing fuzzy matching for: 2min 25sec
+    Second approach: with scorer: token_set_ratio
+    Rest of Vessels Names unique: # 4,237
+    	# 3,427 got IMOs - % 80.88
+    	# 810 w/o IMOs
+Finally total records: # 26,805,481
+	# 26,747,185 got IMOs - % 99.78
+	# 58,296 w/o IMOs
+
+Finally unique vessels names in BoL: # 18,334
+	# 17,526 got IMOs - % 95.59
+	# 811 w/o IMOs
+Handled the Vessels for: 5min 51sec
+================================================================================
